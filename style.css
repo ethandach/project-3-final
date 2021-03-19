@@ -1,0 +1,252 @@
+/*gets font from google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/*defining properties of text on the webpage*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: auto;
+  background-color: #e4f1f6;
+}
+
+h1 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 300;
+  font-size: 150px;
+  z-index: 1;
+}
+
+h2 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 500;
+  font-size: 42px;
+  text-align: center;
+  color: #1d1f25;
+}
+
+h3 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #1d1f25;
+}
+
+h4 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 800;
+  font-size: 32px;
+  margin-left: 3em;
+  color: #1d1f25;
+}
+
+h5 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-size: 32px;
+  text-align: center;
+  color: #1d1f25;
+}
+
+h6 {
+  font-family: "Roboto Mono", serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin-left: 4em;
+  color: #1d1f25;
+}
+
+p {
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 5em;
+  color: #1d1f25;
+}
+
+li {
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-left: 4em;
+  color: #1d1f25;
+}
+
+ul {
+  list-style-type: none;
+  color: #999999;
+}
+
+ul li:before {
+  content: "-";
+  position: absolute;
+  margin-left: -20px;
+}
+
+/*navbar properties*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*navbar link properties*/
+nav a:link {
+  color: #e6e8e9;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #e6e8e9;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #5a7477;
+  text-decoration: underline;
+}
+
+/*logo properties*/
+.logo {
+  display: flex;
+  font-family: "Lobster", serif;
+  font-size: 40px;
+  border: 2px solid white;
+  border-radius: 5px 20px 5px;
+  padding: 10px;
+}
+
+/*container properties*/
+.container {
+  display: flex;
+  background-color: #7e989b;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1.5em;
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #e6e8e9;
+}
+
+/*background image properties*/
+.background-1 {
+  background: #000
+    url(https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80);
+  color: #e6e8e9;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+/*creates the parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.color-overlay {
+  width: 100%;
+  height: 100%;
+  background: #1b2425;
+  opacity: 0.6;
+  position: absolute;
+}
+
+/*about-me photo and text container properties*/
+.about-container {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-1 {
+  max-width: 100%;
+}
+
+.about-container > div {
+  flex-basis: 30%;
+}
+
+.about-text {
+  padding: 1.5em;
+}
+
+.about-me {
+  font-family: "Roboto Mono", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #1d1f25;
+}
+
+/*second background image properties*/
+.code {
+  margin-top: 3em;
+  background: #000 url(https://i.imgur.com/3PvMokQ.jpg);
+  height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+/*creates the parallax scrolling effect*/
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*footer properties*/
+.contact-text {
+  font-family: "Roboto Mono", serif;
+  font-weight: 300;
+  font-size: 28px;
+  color: #e6e8e9;
+}
+
+.contacts {
+  font-family: "Roboto Mono", serif;
+  font-weight: 200;
+  font-size: 16px;
+  color: #e6e8e9;
+}
+
+#contact {
+  background-color: #6c797f;
+  padding: 3em;
+  margin-top: 5em;
+  text-align: center;
+}
+
+/*resizing content with browser size properties*/
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 3em;
+    text-align: center;
+  }
+  p {
+    font-size: 1em;
+  }
+  li {
+    font-size: 1em;
+  }
+  .about-container {
+    flex-wrap: wrap;
+  }
+  .about-me {
+    font-size: 1em;
+  }
+  .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 100%;
+  }
+  .container > div {
+    flex: 1 1 75%;
+  }
